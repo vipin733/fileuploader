@@ -9,12 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.2.3",
+    "aws-sdk": "^2.1185.0",
+    "axios": "^0.27.2",
+    "busboy": "^1.6.0",
+    "cookies-next": "^2.1.1",
+    "googleapis": "^105.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "next": "^12.2.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sequelize": "^6.21.3",
+    "sqlite3": "^5.0.11"
   },
   "devDependencies": {
-    "@types/node": "18.6.3",
+    "@types/node": "^18.6.3",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "eslint": "8.20.0",
