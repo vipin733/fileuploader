@@ -10,7 +10,7 @@ const Index = async (req: NextApiRequestWithUser, res: NextApiResponse) => {
     try {
         let uuid = req.query.file
         if (!uuid) {
-            return res.status(422).json({message: "file id  required"})
+            return res.status(422).json({message: "file id required"})
         }
 
         let user_id = req.user.id
@@ -32,6 +32,7 @@ const Index = async (req: NextApiRequestWithUser, res: NextApiResponse) => {
             Expires: signedUrlExpireSeconds
         });
 
+        // res.setHeader("")
         res.writeHead(302, {Location: url});
         res.end();
     } catch (error) {
